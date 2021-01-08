@@ -25,6 +25,27 @@ body {
 }
 
 /* section 1.2 */
+/* adding dash to list */
+ul{
+    list-style-type:none;
+}
+
+ul li:before{
+content: '-';
+}
+
+/* this is the code for removing dots in ordered list */
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+}
+li { display: block; }
+li:before { 
+    content: counter(item) " ) "; 
+    counter-increment: item 
+}
+
 
 
 #applePie img {
@@ -86,6 +107,7 @@ ul {
     margin: 10px 30px;
     text-align: left;
 }
+
 
 
 
